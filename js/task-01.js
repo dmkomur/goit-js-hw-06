@@ -1,7 +1,7 @@
 const commonListRef = document.querySelector('#categories');
 const commonListItemRef = [...commonListRef.children];
 
-console.log(`Number of categories: ${commonListRef.children.length} \n`);
+console.log(`Number of categories: ${commonListRef.children.length}`);
 console.log('\n');
 
 commonListItemRef.forEach(item => {
