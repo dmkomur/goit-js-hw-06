@@ -12,4 +12,5 @@ function onFormConfirm(event) {
     password: password.value, 
     }
     console.log(userData);
+    event.target.reset();
 }
