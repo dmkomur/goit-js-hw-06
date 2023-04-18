@@ -10,7 +10,7 @@ const inputRef = createBtnRef.previousElementSibling;
 const targetDiv = document.querySelector('#boxes');
 
 function stringMaker() {
-  let size = 10;
+  let size = 30;
   let string = '';
 
   for (let i = 1; i <= inputRef.value; i++) {
@@ -22,5 +22,5 @@ function stringMaker() {
   return string
 }
 
-createBtnRef.addEventListener('click', () => targetDiv.innerHTML = stringMaker() );
+createBtnRef.addEventListener('click', () => targetDiv.insertAdjacentHTML("beforeend", stringMaker()) );
 destroyBtnRef.addEventListener('click', () => targetDiv.innerHTML = '')
